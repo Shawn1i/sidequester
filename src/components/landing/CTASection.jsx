@@ -2,10 +2,18 @@ import { motion } from 'framer-motion';
 import { QrCode, ExternalLink, Sparkles, Users, Gamepad2 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import qrCode from '@/app/qr-code.png';
+import { useState, useEffect } from 'react';
 
 export default function CTASection() {
   const googleFormUrl = "https://forms.gle/9zEPz1c1CHui7zPC6";
+  const [count, setCount] = useState(500); // Start with 500 as the baseline
 
+  useEffect(() => {
+    fetch('https://script.google.com/macros/s/AKfycbyA8E-vSSYnEP1UO24BjvWjZ-SIfVuCbRnMowTyM9m7cdyrlLgo_R4Z1-L9dp-wImHy/exec')
+      .then(res => res.json())
+      .then(data => setCount(data.count))
+      .catch(err => console.log("Script connection failed, using default."));
+  }, []);
   return (
     <div className="flex flex-col items-center lg:items-start">
       {/* Headline */}
@@ -56,7 +64,7 @@ export default function CTASection() {
         <div className="text-center">
           <div className="flex items-center justify-center gap-1.5 text-purple-400 mb-1">
             <Users className="w-4 h-4" />
-            <span className="text-2xl font-bold">500+</span>
+              <span className="text-2xl font-bold">{count}+</span>
           </div>
           <span className="text-purple-200/40 text-xs">Beta Waitlist</span>
         </div>
