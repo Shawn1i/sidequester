@@ -87,13 +87,15 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}
-                className="flex items-center gap-2"
+                className="flex items-center gap-3"
               >
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-yellow-400 flex items-center justify-center">
-                  <span className="text-sm">🎮</span>
-                </div>
+                <img 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697994709e47ca1b5e88d043/0995f505d_image.png"
+                  alt="Sidequester Logo"
+                  className="w-10 h-10 object-contain"
+                />
                 <span 
-                  className="text-white font-bold text-lg"
+                  className="text-white font-bold text-xl"
                   style={{ fontFamily: "'Pixelify Sans', cursive" }}
                 >
                   Sidequester
