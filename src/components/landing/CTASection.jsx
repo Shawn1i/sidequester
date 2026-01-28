@@ -19,7 +19,7 @@ export default function CTASection() {
 
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">Break the Loop</span>
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">Try new Things</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">Chase Novelty</span>
           <br />
           <span className="text-white">Meet new People</span>
         </h1>
