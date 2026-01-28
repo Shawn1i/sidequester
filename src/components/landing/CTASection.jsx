@@ -17,11 +17,11 @@ export default function CTASection() {
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 text-center lg:text-left"
           style={{ fontFamily: "'Pixelify Sans', cursive" }}>
 
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">Touch Grass.</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">Break the Loop</span>
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">Get XP.</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">Try new Things</span>
           <br />
-          <span className="text-white">Meet People.</span>
+          <span className="text-white">Meet new People</span>
         </h1>
       </motion.div>
 
@@ -34,7 +34,7 @@ export default function CTASection() {
 
         The app that gamifies your campus life.
         <br />
-        <span className="text-purple-300/80 italic">Your degree is the Main Quest. Don’t forget the Sidequests.</span>
+        <span className="text-purple-300/80 italic">Your degree is the Main Quest. Don’t forget the SideQuests.</span>
       </motion.p>
 
       {/* Stats */}
