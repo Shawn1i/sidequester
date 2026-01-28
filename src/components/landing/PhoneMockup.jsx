@@ -103,7 +103,7 @@ export default function PhoneMockup() {
               <div className="flex items-center gap-1">
                 <div className="flex gap-0.5">
                   {[...Array(4)].map((_, i) => (
-                    <div key={i} className="w-0.5 bg-white/80 rounded-full" style={{ height: 4 + i * 2 }} />
+                    <div key={i} className="w-0.5 bg-white/80 rounded-full" style={{ height: 10 - i * 2 }} />
                   ))}
                 </div>
                 <span className="ml-1">5G</span>
