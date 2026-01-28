@@ -53,8 +53,10 @@ const quests = [
 export default function PhoneMockup() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [exitDirection, setExitDirection] = useState(0);
+  const [hasSwipedOnce, setHasSwipedOnce] = useState(false);
 
   const handleSwipe = (direction) => {
+    setHasSwipedOnce(true);
     setExitDirection(direction);
     setTimeout(() => {
       setCurrentIndex((prev) => (prev + 1) % quests.length);
@@ -126,6 +128,56 @@ export default function PhoneMockup() {
 
             {/* Card Stack */}
             <div className="relative mx-4 mt-2" style={{ height: '380px' }}>
+              {/* Swipe Prompt Overlay */}
+              <AnimatePresence>
+                {!hasSwipedOnce && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute inset-0 z-50 pointer-events-none flex items-center justify-center"
+                  >
+                    <motion.div
+                      animate={{ 
+                        scale: [1, 1.05, 1],
+                        opacity: [0.9, 1, 0.9]
+                      }}
+                      transition={{ 
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                      className="bg-black/60 backdrop-blur-sm px-6 py-3 rounded-2xl border border-purple-500/30 shadow-2xl"
+                    >
+                      <p 
+                        className="text-white text-sm font-semibold text-center"
+                        style={{ fontFamily: "'Pixelify Sans', cursive" }}
+                      >
+                        👈 Swipe to explore quests 👉
+                      </p>
+                      <div className="flex justify-center gap-2 mt-2">
+                        <motion.div
+                          animate={{ x: [-5, 5, -5] }}
+                          transition={{ duration: 1.5, repeat: Infinity }}
+                          className="text-red-400 text-xs"
+                        >
+                          ← Skip
+                        </motion.div>
+                        <span className="text-purple-300/50 text-xs">•</span>
+                        <motion.div
+                          animate={{ x: [-5, 5, -5] }}
+                          transition={{ duration: 1.5, repeat: Infinity, delay: 0.75 }}
+                          className="text-green-400 text-xs"
+                        >
+                          Accept →
+                        </motion.div>
+                      </div>
+                    </motion.div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
               {/* Background cards */}
               <motion.div
                 className="absolute inset-0"
