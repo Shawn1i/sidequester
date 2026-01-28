@@ -6,24 +6,24 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const quests = [
   {
     id: 1,
-    title: "Pet a Goose (Safely)",
-    description: "Approach the campus guardians. Survive the encounter. Earn eternal glory.",
-    icon: "🪿",
+    title: "Shower at E7",
+    description: "Use the legendary E7 showers. Experience peak engineering luxury. Document the saga.",
+    icon: "🚿",
     difficulty: "Extreme",
     reward: "+50 Aura",
     xp: 500,
-    location: "Ring Road",
+    location: "E7 Building",
     time: "~15 min"
   },
   {
     id: 2,
-    title: "Midnight Library Run",
-    description: "Study past 2AM in DP. Photograph the chaos. Bond with fellow night owls.",
+    title: "Late Night Study Session",
+    description: "Study past 2AM in an empty lecture hall. Photograph the chaos. Bond with fellow night owls.",
     icon: "📚",
     difficulty: "Medium",
     reward: "+30 Focus",
     xp: 200,
-    location: "Dana Porter Library",
+    location: "MC 4020",
     time: "~3 hrs"
   },
   {
