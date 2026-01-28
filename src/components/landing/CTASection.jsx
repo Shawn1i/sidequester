@@ -3,7 +3,7 @@ import { QrCode, ExternalLink, Sparkles, Users, Gamepad2 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 export default function CTASection() {
-  const googleFormUrl = "https://forms.gle/zcj3gSYciEdyHqBV6";
+  const googleFormUrl = "https://forms.gle/your-form-id"; // Replace with actual form URL
 
   return (
     <div className="flex flex-col items-center lg:items-start">
@@ -91,11 +91,14 @@ export default function CTASection() {
           {/* QR Code */}
           <div className="bg-white rounded-xl p-4 mb-4 mx-auto w-fit">
             <div className="relative">
-              <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697994709e47ca1b5e88d043/08da8f55a_image.png"
-                alt="QR Code"
-                className="w-32 h-32"
-              />
+              {/* Placeholder QR - Replace with actual QR code */}
+              <div className="w-32 h-32 bg-[url('https://api.qrserver.com/v1/create-qr-code/?size=128x128&data=https://forms.gle/your-form-id&bgcolor=ffffff&color=1a1a2e')] bg-cover bg-center" />
+              {/* Overlay logo */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                  <span className="text-lg">🎮</span>
+                </div>
+              </div>
             </div>
           </div>
 
