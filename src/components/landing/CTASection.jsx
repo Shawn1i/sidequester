@@ -11,12 +11,12 @@ export default function CTASection() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-      >
-        <h1 
+        transition={{ delay: 0.2 }}>
+
+        <h1
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 text-center lg:text-left"
-          style={{ fontFamily: "'Pixelify Sans', cursive" }}
-        >
+          style={{ fontFamily: "'Pixelify Sans', cursive" }}>
+
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">Touch Grass.</span>
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">Get XP.</span>
@@ -30,11 +30,11 @@ export default function CTASection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="text-purple-200/60 text-lg lg:text-xl max-w-md mb-8 text-center lg:text-left leading-relaxed"
-      >
+        className="text-purple-200/60 text-lg lg:text-xl max-w-md mb-8 text-center lg:text-left leading-relaxed">
+
         The app that gamifies your campus life.
         <br />
-        <span className="text-purple-300/80 italic">Don't let your degree be your only personality trait.</span>
+        <span className="text-purple-300/80 italic">Your degree is the Main Quest. Don’t forget the Sidequests.</span>
       </motion.p>
 
       {/* Stats */}
@@ -42,8 +42,8 @@ export default function CTASection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
-        className="flex gap-6 mb-8"
-      >
+        className="flex gap-6 mb-8">
+
         <div className="text-center">
           <div className="flex items-center justify-center gap-1.5 text-yellow-400 mb-1">
             <Gamepad2 className="w-4 h-4" />
@@ -66,23 +66,23 @@ export default function CTASection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="relative w-full max-w-sm"
-      >
+        className="relative w-full max-w-sm">
+
         {/* Animated border */}
         <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-yellow-400 via-purple-500 to-yellow-400 opacity-75 blur-sm animate-pulse" />
-        <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-yellow-400 via-purple-500 to-yellow-400" 
-          style={{
-            backgroundSize: '200% 200%',
-            animation: 'gradient-shift 3s ease infinite',
-          }}
-        />
+        <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-r from-yellow-400 via-purple-500 to-yellow-400"
+        style={{
+          backgroundSize: '200% 200%',
+          animation: 'gradient-shift 3s ease infinite'
+        }} />
+
         
         <div className="relative bg-[#1a1a2e] rounded-2xl p-6">
           <div className="text-center mb-4">
-            <h3 
+            <h3
               className="text-white text-xl font-bold mb-1"
-              style={{ fontFamily: "'Pixelify Sans', cursive" }}
-            >
+              style={{ fontFamily: "'Pixelify Sans', cursive" }}>
+
               Join the Beta
             </h3>
             <p className="text-purple-200/50 text-sm">Be first to play when we launch</p>
@@ -111,11 +111,11 @@ export default function CTASection() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="block"
-          >
-            <Button 
-              className="w-full h-12 bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-400 hover:to-yellow-300 text-black font-bold text-base rounded-xl shadow-lg shadow-yellow-500/25 transition-all duration-300"
-            >
+            className="block">
+
+            <Button
+              className="w-full h-12 bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-400 hover:to-yellow-300 text-black font-bold text-base rounded-xl shadow-lg shadow-yellow-500/25 transition-all duration-300">
+
               <Sparkles className="w-5 h-5 mr-2" />
               Or Click Here to Join
               <ExternalLink className="w-4 h-4 ml-2" />
@@ -132,23 +132,23 @@ export default function CTASection() {
 
       {/* Floating elements */}
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, -10, 0],
-          rotate: [0, 5, 0],
+          rotate: [0, 5, 0]
         }}
         transition={{ duration: 5, repeat: Infinity }}
-        className="absolute top-20 right-10 text-4xl opacity-20 hidden lg:block"
-      >
+        className="absolute top-20 right-10 text-4xl opacity-20 hidden lg:block">
+
         🎯
       </motion.div>
       <motion.div
-        animate={{ 
+        animate={{
           y: [0, 10, 0],
-          rotate: [0, -5, 0],
+          rotate: [0, -5, 0]
         }}
         transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-        className="absolute bottom-40 right-20 text-3xl opacity-20 hidden lg:block"
-      >
+        className="absolute bottom-40 right-20 text-3xl opacity-20 hidden lg:block">
+
         ⚡
       </motion.div>
 
@@ -159,6 +159,6 @@ export default function CTASection() {
           100% { background-position: 0% 50%; }
         }
       `}</style>
-    </div>
-  );
+    </div>);
+
 }
