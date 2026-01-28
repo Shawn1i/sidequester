@@ -1,10 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function LoadingOverlay({ onComplete }) {
   const [phase, setPhase] = useState(0); // 0: initial, 1: second text, 2: fade out
+  const hasRun = useRef(false);
 
   useEffect(() => {
+    if (hasRun.current) return;
+    hasRun.current = true;
+
     const timer1 = setTimeout(() => setPhase(1), 1500);
     const timer2 = setTimeout(() => setPhase(2), 3000);
     const timer3 = setTimeout(() => onComplete(), 3500);
