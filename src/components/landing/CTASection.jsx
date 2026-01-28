@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { QrCode, ExternalLink, Sparkles, Users, Gamepad2 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import qrCode from '@/app/qr-code.png';
 
 export default function CTASection() {
   const googleFormUrl = "https://forms.gle/9zEPz1c1CHui7zPC6";
@@ -91,7 +92,7 @@ export default function CTASection() {
           {/* QR Code */}
           <div className="bg-white rounded-xl p-4 mb-4 mx-auto w-fit">
             <img
-              src="/qr-code.png"
+              src={qrCode}
               alt="SideQuester QR code"
               className="w-32 h-32 object-contain"
             />
