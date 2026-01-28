@@ -117,7 +117,7 @@ export default function PhoneMockup() {
             <div className="px-4 py-2 flex items-center justify-between">
               <h2 
                 className="text-white text-lg font-bold"
-                style={{ fontFamily: "'Pixelify Sans', cursive" }}
+                style={{ fontFamily: "'Pixelify Sans', cursive", letterSpacing: '0.03em', fontWeight: 700 }}
               >
                 Side Quests
               </h2>
@@ -152,7 +152,7 @@ export default function PhoneMockup() {
                     >
                       <p 
                         className="text-white text-sm font-semibold text-center"
-                        style={{ fontFamily: "'Pixelify Sans', cursive" }}
+                        style={{ fontFamily: "'Pixelify Sans', cursive", letterSpacing: '0.03em', fontWeight: 700 }}
                       >
                         👈 Swipe to explore quests 👉
                       </p>

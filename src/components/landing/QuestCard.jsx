@@ -56,7 +56,7 @@ export default function QuestCard({ quest, isTop }) {
         {/* Quest Title */}
         <h3
           className="text-lg font-bold text-white mb-1 leading-tight"
-          style={{ fontFamily: "'Pixelify Sans', cursive" }}>
+          style={{ fontFamily: "'Pixelify Sans', cursive", letterSpacing: '0.02em', fontWeight: 700 }}>
 
           {quest.title}
         </h3>

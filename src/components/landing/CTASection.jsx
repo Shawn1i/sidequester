@@ -15,7 +15,7 @@ export default function CTASection() {
 
         <h1
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 text-center lg:text-left"
-          style={{ fontFamily: "'Pixelify Sans', cursive" }}>
+          style={{ fontFamily: "'Pixelify Sans', cursive", letterSpacing: '0.05em', fontWeight: 700 }}>
 
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200">Break the Loop</span>
           <br />
@@ -81,7 +81,7 @@ export default function CTASection() {
           <div className="text-center mb-4">
             <h3
               className="text-white text-xl font-bold mb-1"
-              style={{ fontFamily: "'Pixelify Sans', cursive" }}>
+              style={{ fontFamily: "'Pixelify Sans', cursive", letterSpacing: '0.03em', fontWeight: 700 }}>
 
               Join the Beta
             </h3>

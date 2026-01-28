@@ -96,7 +96,7 @@ export default function Home() {
                 />
                 <span 
                   className="text-white font-bold text-xl"
-                  style={{ fontFamily: "'Pixelify Sans', cursive" }}
+                  style={{ fontFamily: "'Pixelify Sans', cursive", letterSpacing: '0.03em', fontWeight: 700 }}
                 >
                   Sidequester
                 </span>

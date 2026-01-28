@@ -57,7 +57,7 @@ export default function LoadingOverlay({ onComplete }) {
                 >
                   <h1 
                     className="text-4xl md:text-6xl text-white tracking-wider"
-                    style={{ fontFamily: "'Pixelify Sans', cursive" }}
+                    style={{ fontFamily: "'Pixelify Sans', cursive", letterSpacing: '0.05em', fontWeight: 700 }}
                   >
                     Main Quest Paused...
                   </h1>
@@ -91,7 +91,7 @@ export default function LoadingOverlay({ onComplete }) {
                   >
                     <h1 
                       className="text-4xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-purple-400 to-yellow-400 tracking-wider"
-                      style={{ fontFamily: "'Pixelify Sans', cursive" }}
+                      style={{ fontFamily: "'Pixelify Sans', cursive", letterSpacing: '0.05em', fontWeight: 700 }}
                     >
                       New Side Quest Discovered
                     </h1>
