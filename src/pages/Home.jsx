@@ -58,9 +58,16 @@ export default function Home() {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="w-full lg:w-1/2 flex items-center justify-center px-4 py-8 lg:py-0 order-2 lg:order-1"
+                className="w-full lg:w-1/2 flex flex-col items-center justify-center px-4 py-8 lg:py-0 order-2 lg:order-1"
               >
                 <PhoneMockup />
+
+                {/* Footer directly under phone */}
+                <div className="mt-8 text-center">
+                  <p className="text-purple-200/30 text-xs">
+                    Made with 💜 by students, for students
+                  </p>
+                </div>
               </motion.div>
 
               {/* Desktop: CTA Section */}
@@ -72,13 +79,6 @@ export default function Home() {
               >
                 <CTASection />
               </motion.div>
-            </div>
-
-            {/* Footer */}
-            <div className="absolute bottom-0 left-0 right-0 py-4 text-center">
-              <p className="text-purple-200/30 text-xs">
-                Made with 💜 by students, for students
-              </p>
             </div>
 
             {/* Decorative corner elements */}
