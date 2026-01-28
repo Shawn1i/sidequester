@@ -124,7 +124,7 @@ export default function CTASection() {
 
           {/* Trust indicators */}
           <div className="flex items-center justify-center gap-4 mt-4 text-purple-200/30 text-xs">
-            <span>✓ Free forever</span>
+            <span className="">✓ F2P</span>
             <span>✓ UWaterloo exclusive</span>
           </div>
         </div>
